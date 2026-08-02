@@ -22,3 +22,9 @@ print(df.dropna(subset=["name"])) # Drop rows with missing values in the "name" 
 print("------FILL MISSING VALUES WITH AVERAGE VALUE------")
 df["salary"] = df["salary"].fillna(df["salary"].mean()) # Fill missing values in the "salary" column with the average salary
 print(df)
+
+
+
+#use mean for salaries and age, and use "Unknown" for missing names and departments
+#use median for age
+#drop rows only when the whole row is useless
